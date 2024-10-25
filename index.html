@@ -72,7 +72,7 @@
 
       // Função para exibir o jogo com base na idade
       function geraRecomendacao(idade) {
-        if (idade == 14) {
+        if (idade >= 0 && idade <= 4) {
           gameIframe.src = "https://scratch.mit.edu/projects/1025919551/embed" ;
           gameIframe.classList.remove('hidden');
           statusMessage.textContent = "Bom jogo!";
